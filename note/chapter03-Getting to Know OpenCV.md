@@ -1,10 +1,12 @@
-# chapter03-Getting to Know OpenCV
+# chapter03-初探OpenCV（Getting to Know OpenCV）
 
 ## OpenCV的基本数据类型(OpenCV Primitive Data Types)
 
-Q:OpenCV中有哪些基本数据类型?
+参考资料：[cxtypes.h](https://github.com/cybertk/opencv/blob/master/opencv/cxcore/include/cxtypes.h)
 
-A:CvPoint,CvSize,CvRect和CvScalar,这些都是都是基本数据类型,只有成员变量而没有成员函数. P.S 表3-1详细的介绍了这4种基本数据类型的成员和意义.
+**Q**:OpenCV中有哪些基本数据类型?
+
+**A**:CvPoint,CvSize,CvRect和CvScalar,这些都是都是基本数据类型,只有成员变量而没有成员函数. P.S 表3-1详细的介绍了这4种基本数据类型的成员和意义.
 
 ### 矩阵和图像类型(Matrix and Image Types)
 
@@ -36,11 +38,15 @@ A:
 
 Q：如何给**CvMat***型的数据赋值？
 
-A：见书本例3-5。
+A：使用CV_MAT_ELEM()或CV_MAT_ELEM_PTR()，具体见书本例3-5。
 
+### 麻烦的方法
 
+Q：为什么要引出**麻烦的方法**？
 
+A：因为**简单的方法**仅仅支持1维或2维的数组。
 
+OpenCV提供了cvPtr1D，通过指针访问矩阵结构。
 
 
 
