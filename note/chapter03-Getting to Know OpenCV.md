@@ -22,9 +22,9 @@ A:因为CvArr是"基类",便于将CvMat* 或 IplImage*传递到程序中.
 
 ## CvMat矩阵结构(CvMat Matrix Structure)
 
-Q:在OpenCv中,创建矩阵的方式有哪些?
+**Q**:在OpenCv中,**创建矩阵**的方式有哪些?
 
-A:
+**A**:
 
 1)`cvCreateMat()`,该方法由多个原函数组成,如`cvCreateMatHeader()`(创建CvMat结构)和cvCreateData()(分配数据内存);
 
