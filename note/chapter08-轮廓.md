@@ -54,9 +54,11 @@ topology
 
 1)序列是内存存储中可以存储的一种**对象**.序列是某种结构的**链表**;
 
-2)由于OpenCV可以基于序列生成许多其他的对象,这和面向对象编程中的容器类模板(container class templates)很像;
+2)可以将序列想象为许多编程语言中普遍存在的容器类或者容器类模板（如C++中的vector）；
 
-3)事实上,在OpenCV中序列是由队列(deque)构成的.
+3)由于OpenCV可以基于序列生成许多其他的对象,这和面向对象编程中的容器类模板(container class templates)很像;
+
+4)事实上,在OpenCV中序列是由队列(deque)构成的.
 
 ### 8.2.1 创建序列(Creating a Sequence)
 
